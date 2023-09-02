@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: prothoma;
+    src: url(/assets/fonts/Prothoma.ttf);
+  }
+  .nav-links a{
+    font-family: prothoma;
+  }
+  .collection1{
+    background-image: url(/assets/images/bg1.png);
+    background-repeat: no-repeat;
+    width: 600px;
+  }
