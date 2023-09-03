@@ -6,6 +6,9 @@ let elementsToShow = 7;
 if(document.body.clientWidth<768){
     elementsToShow = 3;
 }
+else{
+    elementsToShow = 7;
+};
 let cardWidth = sliderContainer.clientWidth / elementsToShow;
 let maxMargin = 0;
 let minMargin = -cardWidth * (cards.length - elementsToShow);
