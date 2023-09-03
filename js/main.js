@@ -9,6 +9,8 @@ let minMargin = -cardWidth * (cards.length - elementsToShow);
 
 // Set the initial width of the slider
 slider.style.width = cards.length * cardWidth + "px";
+slider.style.transition = 'margin';
+slider.style.transitionDuration = '1s';
 
 // Set the initial margin-left to 0
 slider.style.marginLeft = "0px";

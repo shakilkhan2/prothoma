@@ -1,19 +1,27 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: prothoma;
-    src: url(/assets/fonts/Prothoma.ttf);
-  }
-  .nav-links a{
-    font-family: prothoma;
+  font-family: prothoma;
+  src: url(/assets/fonts/Prothoma.ttf);
+}
+.nav-links a {
+  font-family: prothoma;
+}
+
+@media (max-width: 767px) {
+  .navList {
+    z-index: 999;
+    background-color: white;
+    width: 100vw;
   }
 
-  /* .collection1{
-    /* background-image: url(/assets/images/bg1.png); */
-    background-repeat: no-repeat;
-    width: 600px;
-  } */
+  .navList li {
+    text-align: left;
+    width: 100%;
+    padding: 0px 25px;
+  }
+}
