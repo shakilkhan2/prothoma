@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: prothoma;
-  src: url(/assets/fonts/Prothoma.ttf);
+  src: url(./assets/fonts/Prothoma.ttf);
 }
 .nav-links a {
   font-family: prothoma;
@@ -25,11 +25,11 @@
     padding: 0px 25px;
   }
 }
-.collection1{
+.collection1 {
   height: auto;
-  background-image: url(/assets/images/cov.jpeg);
+  background-image: url(./assets/images/cov.jpeg);
 }
-.collection2{
+.collection2 {
   height: auto;
-  background-image: url(/assets/images/cov1.jpg);
+  background-image: url(./assets/images/cov1.jpg);
 }
