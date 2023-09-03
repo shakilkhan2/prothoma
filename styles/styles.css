@@ -25,3 +25,11 @@
     padding: 0px 25px;
   }
 }
+.collection1{
+  height: auto;
+  background-image: url(/assets/images/cov.jpeg);
+}
+.collection2{
+  height: auto;
+  background-image: url(/assets/images/cov1.jpg);
+}
