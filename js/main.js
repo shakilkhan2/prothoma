@@ -2,7 +2,10 @@ let sliderContainer = document.getElementById("sliderContainer");
 let slider = document.getElementById("slider");
 let cards = slider.getElementsByTagName("li");
 
-let elementsToShow = 7; // Number of elements to show at once
+let elementsToShow = 7; 
+if(document.body.clientWidth<768){
+    elementsToShow = 3;
+}
 let cardWidth = sliderContainer.clientWidth / elementsToShow;
 let maxMargin = 0;
 let minMargin = -cardWidth * (cards.length - elementsToShow);
