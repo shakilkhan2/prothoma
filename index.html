@@ -1,165 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Prothoma</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-</head>
-<body>
-   <header>
-    <nav class="flex items-center gap-8 justify-around mx-4 md:mr-28 md:ml-0">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="flex items-center gap-8 justify-around mx-4 md:mr-28 md:ml-0">
         <div class="flex">
-            <ion-icon onclick="toggleButton(this)" class="text-3xl cursor-pointer md:hidden" name="menu"></ion-icon>
-           
+          <ion-icon
+            onclick="toggleButton(this)"
+            class="text-3xl cursor-pointer md:hidden"
+            name="menu"
+          ></ion-icon>
         </div>
-        
-<div>
-    <img class="w-36" src="./assets/images/logo.png" alt="">
-</div>
-<form action="" class=" relative w-max ">
-    <input class="relative peer z-10 bg-transparent border w-8 h-8 rounded-md pl-8  outline-none cursor-pointer focus:w-full focus:border-rose-400 focus:cursor-text focus:pr-4" type="search" name="" id="search" placeholder='বই, লেখক...'> 
-    <ion-icon class="text-2xl absolute right-2 top-1" name="search-outline"></ion-icon>
-</form>
-<div class=" nav-links absolute md:static bg-white min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto flex md:items-center px-5 ">
-    <ul class="flex flex-col md:flex-row items-center gap-8 ">
-        <li><a class="hover:text-rose-500" href="#">বই</a></li> 
-        <li><a class="hover:text-rose-500" href="#">লেখক</a></li>  
-        <li><a class="hover:text-rose-500" href="#">ক্যাটাগরি</a></li>
-        <li><a class="hover:text-rose-500" href="#">ক্যাটালগ</a></li>
-        <li><a class="hover:text-rose-500" href="#">প্রাপ্তিস্থান</a></li> 
-        <li><a class="hover:text-rose-500" href="#">প্রথমা সম্পর্কে</a></li>  
-        <li><a class="hover:text-rose-500" href="#">ব্লগ</a></li> 
-         
-    </ul>
-</div>
-    </nav>
-   </header>
-    <main>
-        <!-- slider -->
-<div class="my-10">
-    <div class="max-w-2xl md:max-w-full mx-10 md:mx-28 ">
 
-        <div id="default-carousel" class="relative" data-carousel="static">
-         
-            <div class="overflow-hidden relative h-56 rounded-md sm:h-64  md:h-96">
-               
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span>
-                    <img src="./assets/images/slide1.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                </div>
-               
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="./assets/images/slide2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                </div>
-               
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="./assets/images/slide3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                </div>
-            </div>
-            
-            
-            <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            </div>
-           
-            <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    <span class="hidden">Anterior</span>
-                </span>
-            </button>
-            <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-                    <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    <span class="hidden">Siguiente</span>
-                </span>
-            </button>
+        <div>
+          <img class="w-36" src="./assets/images/logo.png" alt="" />
         </div>
-    
-        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-    </div>
-</div>
-<!-- slider end -->
-<div>
-    <img class="mx-auto w-[84%]" src="./assets/images/cover.png" alt="">
-</div>
-<h3 class="text-center mt-16 mb-8 text-slate-600">এ সময়ের আয়োজন - রাজনীতি আর অর্থনীতির সংকলন</h3>
-<div class="flex flex-col md:flex-row mx-20 md:mx-28 gap-4">
-   
-    <div class="collection1 grid grid-cols-2 md:grid-cols-4 justify-center gap-3 p-3">
-        <img src="./assets/images/book1.png" alt="">
-        <img src="./assets/images/book1.png" alt="">
-        <img src="./assets/images/book1.png" alt="">
-        <img src="./assets/images/book1.png" alt="">
-    </div>
-    
-    <div class="collection1 grid grid-cols-2 md:grid-cols-4 justify-center gap-3 p-3">
-        <img src="./assets/images/book1.png" alt="">
-        <img src="./assets/images/book1.png" alt="">
-        <img src="./assets/images/book1.png" alt="">
-        <img src="./assets/images/book1.png" alt="">
-    </div>
-</div>
-<h3 class="text-center mt-16 mb-8 text-slate-600">জনপ্রিয় ক্যাটাগরি</h3>
-<div>
-    <img class="mx-auto w-[84%]" src="./assets/images/category.png" alt="">
-</div>
+        <form action="" class="relative w-max">
+          <input
+            class="relative peer z-10 bg-transparent border w-8 h-8 rounded-md pl-8 outline-none cursor-pointer focus:w-full focus:border-rose-400 focus:cursor-text focus:pr-4"
+            type="search"
+            name=""
+            id="search"
+            placeholder="বই, লেখক..."
+          />
+          <ion-icon
+            class="text-2xl absolute right-2 top-1"
+            name="search-outline"
+          ></ion-icon>
+        </form>
+        <div
+          class="nav-links absolute md:static bg-white min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto flex md:items-center px-5"
+        >
+          <ul class="flex flex-col md:flex-row items-center gap-8">
+            <li><a class="hover:text-rose-500" href="#">বই</a></li>
+            <li><a class="hover:text-rose-500" href="#">লেখক</a></li>
+            <li><a class="hover:text-rose-500" href="#">ক্যাটাগরি</a></li>
+            <li><a class="hover:text-rose-500" href="#">ক্যাটালগ</a></li>
+            <li><a class="hover:text-rose-500" href="#">প্রাপ্তিস্থান</a></li>
+            <li><a class="hover:text-rose-500" href="#">প্রথমা সম্পর্কে</a></li>
+            <li><a class="hover:text-rose-500" href="#">ব্লগ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- slider -->
+      <div class="my-10">
+        <div class="max-w-2xl md:max-w-full mx-10 md:mx-28">
+          <div id="default-carousel" class="relative" data-carousel="static">
+            <div
+              class="overflow-hidden relative h-56 rounded-md sm:h-64 md:h-96"
+            >
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <span
+                  class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl"
+                  >Primer Slide</span
+                >
+                <img
+                  src="./assets/images/slide1.jpg"
+                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  alt="..."
+                />
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="./assets/images/slide2.jpg"
+                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  alt="..."
+                />
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="./assets/images/slide3.jpg"
+                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  alt="..."
+                />
+              </div>
+            </div>
+
+            <div
+              class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+            >
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 1"
+                data-carousel-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 2"
+                data-carousel-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 3"
+                data-carousel-slide-to="2"
+              ></button>
+            </div>
+
+            <button
+              type="button"
+              class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+              >
+                <svg
+                  class="w-5 h-5 text-white sm:w-6 sm:h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+                <span class="hidden">Anterior</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+              >
+                <svg
+                  class="w-5 h-5 text-white sm:w-6 sm:h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+                <span class="hidden">Siguiente</span>
+              </span>
+            </button>
+          </div>
+
+          <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+      </div>
+      <!-- slider end -->
+      <div>
+        <img class="mx-auto w-[84%]" src="./assets/images/cover.png" alt="" />
+      </div>
+
+      <!-- এ সময়ের আয়োজন - রাজনীতি আর অর্থনীতির সংকলন -->
+
+      <h3 class="text-center mt-16 mb-8 text-slate-600">
+        এ সময়ের আয়োজন - রাজনীতি আর অর্থনীতির সংকলন
+      </h3>
+      <div class="flex flex-col md:flex-row mx-20 md:mx-28 gap-4">
+        <div
+          class="collection1 grid grid-cols-2 md:grid-cols-4 justify-center gap-3 p-3"
+        >
+          <img src="./assets/images/book1.png" alt="" />
+          <img src="./assets/images/book1.png" alt="" />
+          <img src="./assets/images/book1.png" alt="" />
+          <img src="./assets/images/book1.png" alt="" />
+        </div>
+
+        <div
+          class="collection1 grid grid-cols-2 md:grid-cols-4 justify-center gap-3 p-3"
+        >
+          <img src="./assets/images/book1.png" alt="" />
+          <img src="./assets/images/book1.png" alt="" />
+          <img src="./assets/images/book1.png" alt="" />
+          <img src="./assets/images/book1.png" alt="" />
+        </div>
+      </div>
+
+      <!-- সম্প্রতি প্রকাশিত বইগুলো(carousel) -->
+      <section>
+        <div class="flex">
+          <div class="w-2/12 flex items-center">
+            <div class="w-full text-right">
+              <button onclick="prev()"
+                class="bg-[#D3C7B0] rounded-full text-white p-1 shadow-lg"
+              >
+                <ion-icon
+                  class="text-3xl flex items-center"
+                  name="chevron-back-outline"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+          <div id="sliderContainer" class="w-10/12 overflow-hidden">
+            <ul id="slider" class="flex w-full transition-margin duration-700">
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book1.png"
+                  alt=""
+                />
+              </li>
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book1.png"
+                  alt=""
+                />
+              </li>
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book2.png"
+                  alt=""
+                />
+              </li>
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book1.png"
+                  alt=""
+                />
+              </li>
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book1.png"
+                  alt=""
+                />
+              </li>
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book1.png"
+                  alt=""
+                />
+              </li>
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book1.png"
+                  alt=""
+                />
+              </li>
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book1.png"
+                  alt=""
+                />
+              </li>
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book1.png"
+                  alt=""
+                />
+              </li>
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book1.png"
+                  alt=""
+                />
+              </li>
+              <li class="m-4 w-96">
+                <img
+                  class="object-cover w-[100px]"
+                  src="./assets/images/book1.png"
+                  alt=""
+                />
+              </li>
+              
+            </ul>
+          </div>
+          <div class="w-2/12 flex items-center justify-center">
+            <div class="w-full">
+              <button onclick="next()"
+                class="bg-[#D3C7B0] rounded-full text-white p-1 shadow-lg"
+              >
+                <ion-icon
+                  class="text-3xl flex flex items-center"
+                  name="chevron-forward-outline"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h3 class="text-center mt-16 mb-8 text-slate-600">জনপ্রিয় ক্যাটাগরি</h3>
+      <div>
+        <img
+          class="mx-auto w-[84%]"
+          src="./assets/images/category.png"
+          alt=""
+        />
+      </div>
     </main>
     <footer>
-<div class="flex flex-col md:flex-row justify-between items-center mx-0 md:mx-28 text-slate-600 bg-[#EEEEEE] mt-20">
-    <div>
-        <img class="w-36" src="./assets/images/logo.png" alt=""> 
-        <p><small>প্রথমা প্রকাশন সম্পর্কে কিছু কথা লিখতে হবে। কবে প্রতিষ্ঠা হলো? প্রথম <br> বই কোনটি? এই পর্যন্ত কতটি বই প্রকাশ হলো। মোট কতজন লেখক? <br> কতগুলো বিষয়ের বই প্রকাশিত হয়। প্রথমা প্রকাশন সম্পর্কে কিছু কথা <br> লিখতে হবে।  কবে প্রতিষ্ঠা হলো? প্রথম বই কোনটি? এই পর্যন্ত কতটি বই <br> প্রকাশ হলো। মোট কতজন লেখক? কতগুলো বিষয়ের বই প্রকাশিত হয়।</small></p>
-    </div>
-    <div class="flex md:flex-row gap-8 my-6 md:my-0">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center mx-0 md:mx-28 text-slate-600 bg-[#EEEEEE] mt-20"
+      >
         <div>
+          <img class="w-36" src="./assets/images/logo.png" alt="" />
+          <p>
+            <small
+              >প্রথমা প্রকাশন সম্পর্কে কিছু কথা লিখতে হবে। কবে প্রতিষ্ঠা হলো?
+              প্রথম <br />
+              বই কোনটি? এই পর্যন্ত কতটি বই প্রকাশ হলো। মোট কতজন লেখক? <br />
+              কতগুলো বিষয়ের বই প্রকাশিত হয়। প্রথমা প্রকাশন সম্পর্কে কিছু কথা
+              <br />
+              লিখতে হবে। কবে প্রতিষ্ঠা হলো? প্রথম বই কোনটি? এই পর্যন্ত কতটি বই
+              <br />
+              প্রকাশ হলো। মোট কতজন লেখক? কতগুলো বিষয়ের বই প্রকাশিত হয়।</small
+            >
+          </p>
+        </div>
+        <div class="flex md:flex-row gap-8 my-6 md:my-0">
+          <div>
             <h5>গুরুত্বপূর্ণ লিঙ্ক</h5>
             <ul>
-               <small>
-                <li><a href="#">বই</a></li> 
-                <li><a href="#">লেখক</a></li>  
+              <small>
+                <li><a href="#">বই</a></li>
+                <li><a href="#">লেখক</a></li>
                 <li><a href="#">ক্যাটাগরি</a></li>
                 <li><a href="#">ক্যাটালগ</a></li>
-                <li><a href="#">প্রাপ্তিস্থান</a></li> 
-                <li><a href="#">প্রথমা সম্পর্কে</a></li>  
+                <li><a href="#">প্রাপ্তিস্থান</a></li>
+                <li><a href="#">প্রথমা সম্পর্কে</a></li>
                 <li><a href="#">ব্লগ</a></li>
-               </small>
+              </small>
             </ul>
+          </div>
+          <div>
+            <img class="w-36" src="./assets/images/social.png" alt="" />
+          </div>
         </div>
         <div>
-            <img class="w-36" src="./assets/images/social.png" alt="">
+          <h5>যোগাযোগ</h5>
+          <p class="">
+            <small>
+              ৩৮/৪, মান্নান মার্কেট (২য় তলা), <br />
+              বাংলাবাজার, ঢাকা। <br />
+              ১৯-২০ কারওয়ানবাজার, ঢাকা <br />
+              প্রথমা বুক ক্যাফে, ইউনাইটেড সিটি <br />
+              আজিজ সুপার মার্কেট, শাহবাগ, ঢাকা। <br />
+              +8801 700 000 000 <br />
+              info@prothomaprokashan.com</small
+            >
+          </p>
         </div>
-    </div>
-    <div>
-        <h5>যোগাযোগ</h5>
-        <p class="">
-           <small> ৩৮/৪, মান্নান মার্কেট (২য় তলা), <br>
-            বাংলাবাজার, ঢাকা। <br>
-            ১৯-২০ কারওয়ানবাজার, ঢাকা <br>
-            প্রথমা বুক ক্যাফে, ইউনাইটেড সিটি <br>
-            আজিজ সুপার মার্কেট, শাহবাগ, ঢাকা। <br>
-            +8801 700 000 000 <br>
-            info@prothomaprokashan.com</small>
-        </p>
-    </div>
-</div>
-<p class="bg-#DAE0E1 p-4 text-center">©২০২৩  প্রথমা প্রকাশন</p>
+      </div>
+      <p class="bg-#DAE0E1 p-4 text-center">©২০২৩ প্রথমা প্রকাশন</p>
     </footer>
 
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script>
-    const navLinks = document.querySelector('.nav-links');
-    function toggleButton(event){
-        event.name = event.name === 'menu' ? 'close' : 'menu'
-        navLinks.classList.toggle('top-[14%]');
-    }
-</script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function toggleButton(event) {
+        event.name = event.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[14%]");
+      }
+    </script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
