@@ -11,8 +11,9 @@
   .nav-links a{
     font-family: prothoma;
   }
-  .collection1{
-    background-image: url(/assets/images/bg1.png);
+
+  /* .collection1{
+    /* background-image: url(/assets/images/bg1.png); */
     background-repeat: no-repeat;
     width: 600px;
-  }
+  } */
