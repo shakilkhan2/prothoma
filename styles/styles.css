@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: prothoma;
-  src: url(./assets/fonts/Prothoma.ttf);
+  src: url(/assets/fonts/Prothoma.ttf);
 }
 .nav-links a {
   font-family: prothoma;
@@ -14,24 +14,26 @@
 
 @media (max-width: 767px) {
   .navList {
-    z-index: 999;
+    z-index: 40;
     background-color: white;
     width: 100vw;
   }
-
+  #nav-items{
+    display: flex;
+    justify-content: space-between;
+  }
   .navList li {
     text-align: left;
     width: 100%;
-    padding: 0px 25px;
+    padding: 2px 25px;
   }
-} 
-
+}
 
 .collection1 {
   height: auto;
-  background-image: url(./assets/images/cov.jpeg);
+  background-image: url(/assets/images/cov.jpeg);
 }
 .collection2 {
   height: auto;
-  background-image: url(./assets/images/cov1.jpg);
+  background-image: url(/assets/images/cov1.jpg);
 }

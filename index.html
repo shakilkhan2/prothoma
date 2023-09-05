@@ -15,56 +15,61 @@
   <body class="bg-slate-100">
     <header class="header">
       <!-- Navbar -->
-      <nav class="flex  md:px-28 bg-white">
-        <div class="flex items-center">
+      <nav class="items-center bg-white py-2">
+        <div class="flex justify-between items-center md:mx-28">
+          <div class="ml-10 md:ml-0">
+            <a href=""
+              ><img class="w-36" src="./assets/images/logo.png" alt=""
+            /></a>
+          </div>
+          <div
+            class="nav-links absolute md:static bg-white min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto flex md:items-bottom py-4"
+          >
+            <ul class="navList flex flex-col md:flex-row items-center gap-8">
+              <li><a class="hover:text-rose-500" href="#">বই</a></li>
+              <li><a class="hover:text-rose-500" href="#">লেখক</a></li>
+              <li><a class="hover:text-rose-500" href="#">ক্যাটাগরি</a></li>
+              <li><a class="hover:text-rose-500" href="#">ক্যাটালগ</a></li>
+              <li><a class="hover:text-rose-500" href="#">প্রাপ্তিস্থান</a></li>
+              <li>
+                <a class="hover:text-rose-500" href="#">প্রথমা সম্পর্কে</a>
+              </li>
+              <li><a class="hover:text-rose-500" href="#">ব্লগ</a></li>
+              <li></li>
+            </ul>
+
+            <div>
+              <form action="" class="relative w-[200px]">
+                <input
+                  class="relative peer z-10 bg-transparent w-8 h-8 rounded-md pl-8 outline-none cursor-pointer focus:w-full focus:border-b-2 focus:border-slate-400 focus:cursor-text focus:pr-8 focus:border-solid focus:border-indigo-600"
+                  type="search"
+                  name=""
+                  id="search"
+                  placeholder="বই, লেখক..."
+                />
+                <label for="search"
+                  ><ion-icon
+                    class="text-2xl absolute right-2 top-1 cursor-pointer"
+                    name="search-outline"
+                  ></ion-icon
+                ></label>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="absolute z-50 top-4">
           <ion-icon
             onclick="toggleButton(this)"
             class="text-3xl cursor-pointer md:hidden"
             name="menu"
           ></ion-icon>
         </div>
-
-        <div>
-          <a href=""
-            ><img class="w-36" src="./assets/images/logo.png" alt=""
-          /></a>
-        </div>
-
-        <div
-          class="nav-links absolute md:static bg-white min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto flex md:items-bottom pb-4"
-        >
-          <ul
-            class="navList flex flex-col md:flex-row items-center gap-8 pt-12"
-          >
-            <li><a class="hover:text-rose-500 ml-4" href="#">বই</a></li>
-            <li><a class="hover:text-rose-500" href="#">লেখক</a></li>
-            <li><a class="hover:text-rose-500" href="#">ক্যাটাগরি</a></li>
-            <li><a class="hover:text-rose-500" href="#">ক্যাটালগ</a></li>
-            <li><a class="hover:text-rose-500" href="#">প্রাপ্তিস্থান</a></li>
-            <li><a class="hover:text-rose-500" href="#">প্রথমা সম্পর্কে</a></li>
-            <li><a class="hover:text-rose-500 mr-24" href="#">ব্লগ</a></li>
-            <li>
-              <form action="" class="relative w-max">
-                <input
-                  class="relative peer z-10 bg-transparent border w-8 h-8 rounded-md pl-8 outline-none cursor-pointer focus:w-full focus:border-rose-400 focus:cursor-text focus:pr-4"
-                  type="search"
-                  name=""
-                  id="search"
-                  placeholder="বই, লেখক..."
-                />
-                <ion-icon
-                  class="text-2xl absolute right-2 top-1 cursor-pointer"
-                  name="search-outline"
-                ></ion-icon>
-              </form>
-            </li>
-          </ul>
-        </div>
       </nav>
+
     </header>
     <main>
       <!-- slider -->
-      <div class="my-10">
+      <div class="mb-10">
         <div class="max-w-2xl md:max-w-full h-full">
           <div id="default-carousel" class="relative" data-carousel="static">
             <div class="overflow-hidden relative h-56 sm:h-64 md:h-96">
@@ -141,7 +146,7 @@
                     d="M15 19l-7-7 7-7"
                   ></path>
                 </svg>
-                <span class="hidden">Anterior</span>
+               
               </span>
             </button>
             <button
@@ -175,67 +180,106 @@
       </div>
       <!-- slider end -->
       <div>
-        <img class="mx-auto w-[84%]" src="./assets/images/cover.png" alt="" />
+        <a href="#">
+          <img class="mx-auto w-[84%]" src="./assets/images/cover.png" alt=""
+        /></a>
       </div>
 
       <!-- এ সময়ের আয়োজন - রাজনীতি আর অর্থনীতির সংকলন -->
 
-      <h3 class="text-center text-lg font-semibold mt-16 mb-8 text-slate-600">
+      <h3
+        class="text-center text-lg font-semibold mt-16 mb-8 px-10 text-slate-600"
+      >
         এ সময়ের আয়োজন - রাজনীতি আর অর্থনীতির সংকলন
       </h3>
       <div class="flex flex-col md:flex-row mx-10 md:mx-28 gap-20">
-        <div
-          class="collection1 grid grid-cols-2 md:grid-cols-4 justify-center gap-8 p-3"
-        >
-          <img
-            class="w-40 cursor-pointer"
-            src="./assets/images/b2.jpg"
-            alt=""
-          />
-          <img
-            class="w-40 cursor-pointer"
-            src="./assets/images/b1.jpg"
-            alt=""
-          />
-          <img
-            class="w-40 cursor-pointer"
-            src="./assets/images/b3.jpg"
-            alt=""
-          />
-          <img
-            class="w-40 cursor-pointer"
-            src="./assets/images/b1.jpg"
-            alt=""
-          />
+        <div>
+          <div
+            class="collection1 grid grid-cols-2 md:grid-cols-4 justify-center gap-8 p-3"
+          >
+            <a href="#">
+              <img
+                class="w-40 cursor-pointer"
+                src="./assets/images/b2.jpg"
+                alt=""
+              />
+            </a>
+            <a href="#"
+              ><img
+                class="w-40 cursor-pointer"
+                src="./assets/images/b1.jpg"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="w-40 cursor-pointer"
+                src="./assets/images/b3.jpg"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="w-40 cursor-pointer"
+                src="./assets/images/b1.jpg"
+                alt=""
+            /></a>
+          </div>
+          <a href="#"
+            ><p class="text-center text-slate-400">
+              <small
+                >নির্বাচনকে সামনে রেখে বাংলাদেশের রাজনীতি এখন বেশ গতিময় হয়ে
+                <br />
+                উঠেছে। রাজনীতির গতি প্রকৃতি তাই এখন সবার আকর্ষণের
+                কেন্দ্রবিন্দু।</small
+              >
+            </p></a
+          >
         </div>
 
-        <div
-          class="collection2 grid grid-cols-2 md:grid-cols-4 justify-center gap-8 p-3"
-        >
-          <img
-            class="w-40 cursor-pointer"
-            src="./assets/images/b3.jpg"
-            alt=""
-          />
-          <img
-            class="w-40 cursor-pointer"
-            src="./assets/images/b2.jpg"
-            alt=""
-          />
-          <img
-            class="w-40 cursor-pointer"
-            src="./assets/images/b1.jpg"
-            alt=""
-          />
-          <img
-            class="w-40 cursor-pointer"
-            src="./assets/images/b2.jpg"
-            alt=""
-          />
+        <div>
+          <div
+            class="collection2 grid grid-cols-2 md:grid-cols-4 justify-center gap-8 p-3"
+          >
+            <a href="#"
+              ><img
+                class="w-40 cursor-pointer"
+                src="./assets/images/b3.jpg"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="w-40 cursor-pointer"
+                src="./assets/images/b2.jpg"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="w-40 cursor-pointer"
+                src="./assets/images/b1.jpg"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="w-40 cursor-pointer"
+                src="./assets/images/b2.jpg"
+                alt=""
+            /></a>
+          </div>
+          <a href="#"
+            ><p class="text-center text-slate-400">
+              <small
+                >বৈশ্বিক অস্থিরতার এই সময়ে অর্থনীতির চাকা সচল রাখতে প্রতিটি দেশ
+                <br />
+                তৎপর; সঠিক অর্থনৈতিক সিদ্ধান্তই হতে পারে সাফল্যের
+                চাবিকাঠি।</small
+              >
+            </p></a
+          >
         </div>
       </div>
 
-      <p class="text-center mt-16 mb-8 text-slate-600 text-lg font-semibold">
+      <p
+        class="text-center mt-16 mb-8 text-slate-600 px-10 text-lg font-semibold"
+      >
         সম্প্রতি প্রকাশিত বইগুলো
       </p>
       <!-- সম্প্রতি প্রকাশিত বইগুলো(carousel) -->
@@ -257,60 +301,95 @@
           <div id="sliderContainer" class="w-10/12 overflow-hidden">
             <ul id="slider" class="flex w-full">
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b1.jpg" alt="" />
+                <a href="#"><img class="object-cover" src="./assets/images/b1.jpg" alt="" /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b3.jpg" alt="" />
+                <a href="#"><img class="object-cover" src="./assets/images/b3.jpg" alt="" /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b2.jpg" alt="" />
+               <a href="#"> <img class="object-cover" src="./assets/images/b2.jpg" alt="" /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b1.jpg" alt="" />
+               <a href="#"> <img class="object-cover" src="./assets/images/b1.jpg" alt="" /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b2.jpg" alt="" />
+                <a href="#"><img class="object-cover" src="./assets/images/b2.jpg" alt="" /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b1.jpg" alt="" />
+               <a href="#"> <img class="object-cover" src="./assets/images/b1.jpg" alt="" /></a>
               </li>
               <li class="m-4 w-96">
-                <img
+                <a href="#"><img
                   class="object-cover"
                   src="./assets/images/book1.png"
                   alt=""
-                />
+                /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b2.jpg" alt="" />
+                <a href="#">
+                  <img class="object-cover" src="./assets/images/b2.jpg" alt=""
+                /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b1.jpg" alt="" />
+                <a href="#"
+                  ><img
+                    class="object-cover"
+                    src="./assets/images/b1.jpg"
+                    alt=""
+                /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b3.jpg" alt="" />
+                <a href="#"
+                  ><img
+                    class="object-cover"
+                    src="./assets/images/b3.jpg"
+                    alt=""
+                /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b1.jpg" alt="" />
+                <a href="#"
+                  ><img
+                    class="object-cover"
+                    src="./assets/images/b1.jpg"
+                    alt=""
+                /></a>
               </li>
               <li class="m-4 w-96">
-                <img
-                  class="object-cover"
-                  src="./assets/images/book1.png"
-                  alt=""
-                />
+                <a href="#"
+                  ><img
+                    class="object-cover"
+                    src="./assets/images/book1.png"
+                    alt=""
+                /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b2.jpg" alt="" />
+                <a href="#"
+                  ><img
+                    class="object-cover"
+                    src="./assets/images/b2.jpg"
+                    alt=""
+                /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b1.jpg" alt="" />
+                <a href="#">
+                  <img class="object-cover" src="./assets/images/b1.jpg" alt=""
+                /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b3.jpg" alt="" />
+                <a href="#"
+                  ><img
+                    class="object-cover"
+                    src="./assets/images/b3.jpg"
+                    alt=""
+                /></a>
               </li>
               <li class="m-4 w-96">
-                <img class="object-cover" src="./assets/images/b1.jpg" alt="" />
+                <a href="#"
+                  ><img
+                    class="object-cover"
+                    src="./assets/images/b1.jpg"
+                    alt=""
+                /></a>
               </li>
             </ul>
           </div>
@@ -332,331 +411,208 @@
 
       <!-- category -->
 
-      <h3 class="text-center mt-16 mb-8 text-slate-600 text-lg font-semibold">
+      <h3
+        class="text-center mt-16 mb-8 text-slate-600 px-10 text-lg font-semibold"
+      >
         জনপ্রিয় ক্যাটাগরি
       </h3>
       <div class="grid grid-cols-2 md:grid-cols-6 gap-4 mx-10 md:mx-28">
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
             Category 1
           </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
+        </a>
+      
+        <!-- Category 2 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
             Category 2
           </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
+        </a>
+      
+        <!-- Category 3 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
             Category 3
           </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
+        </a>
+      
+        <!-- Category 4 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
             Category 4
           </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
+        </a>
+      
+        <!-- Category 5 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
             Category 5
           </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
+        </a>
+      
+        <!-- Category 6 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
             Category 6
           </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 7
+        </a>
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 1
           </div>
-        </div>
+        </a>
+      
+        <!-- Category 2 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 2
+          </div>
+        </a>
+      
+        <!-- Category 3 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 3
+          </div>
+        </a>
+      
+        <!-- Category 4 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 4
+          </div>
+        </a>
+      
+        <!-- Category 5 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 5
+          </div>
+        </a>
+      
+        <!-- Category 6 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 6
+          </div>
+        </a>
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 1
+          </div>
+        </a>
+      
+        <!-- Category 2 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 2
+          </div>
+        </a>
+      
+        <!-- Category 3 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 3
+          </div>
+        </a>
+      
+        <!-- Category 4 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 4
+          </div>
+        </a>
+      
+        <!-- Category 5 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 5
+          </div>
+        </a>
+      
+        <!-- Category 6 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 6
+          </div>
+        </a>
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 1
+          </div>
+        </a>
+      
+        <!-- Category 2 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 2
+          </div>
+        </a>
+      
+        <!-- Category 3 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 3
+          </div>
+        </a>
+      
+        <!-- Category 4 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 4
+          </div>
+        </a>
+      
+        <!-- Category 5 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 5
+          </div>
+        </a>
+      
+        <!-- Category 6 -->
+        <a href="#" class="relative group flex justify-center items-center">
+          <img class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105" src="./assets/images/cate1.jpg" alt="" />
+          <div class="absolute inset-0 bg-black bg-opacity-70 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex justify-center items-center">
+            Category 6
+          </div>
+        </a>
+      </div>
 
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 8
-          </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 9
-          </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 10
-          </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 11
-          </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 12
-          </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 13
-          </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 14
-          </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 15
-          </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 16
-          </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 17
-          </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 18
-          </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-60 md:w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 19
-          </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 20
-          </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 21
-          </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 22
-          </div>
-        </div>
-        <div class="relative group">
-          <img
-            class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 23
-          </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="relative group">
-          <img
-            class="w-44 cursor-pointer transition duration-300 transform group-hover:scale-105"
-            src="./assets/images/cate1.jpg"
-            alt=""
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-70 text-white text-center py-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-          >
-            Category 24
-          </div>
-        </div>
+      
       </div>
     </main>
     <footer>
       <div
-        class="flex flex-col md:flex-row justify-between items-center px-0 md:px-28 py-8 text-slate-600 bg-[#EEEEEE] mt-20"
+        class="flex flex-col md:flex-row justify-between itemes-left md:items-center px-10 md:px-28 py-8 text-slate-600 bg-[#EEEEEE] mt-20"
       >
         <div>
           <a href="">
-            <img class="w-36" src="./assets/images/logo.png" alt=""
+            <img class="w-36 mx-auto md:mx-0" src="./assets/images/logo.png" alt=""
           /></a>
           <p>
             <small
@@ -671,7 +627,7 @@
             >
           </p>
         </div>
-        <div class="flex md:flex-row gap-8 my-6 md:my-0">
+        <div class="flex justify-between md:flex-row gap-8 my-6 md:my-0">
           <div>
             <h5>গুরুত্বপূর্ণ লিঙ্ক</h5>
             <ul>
@@ -716,7 +672,7 @@
             ></a>
           </div>
         </div>
-        <div>
+        <div class="">
           <h5>যোগাযোগ</h5>
           <p class="">
             <small>
